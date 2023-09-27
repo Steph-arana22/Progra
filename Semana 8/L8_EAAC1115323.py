@@ -26,5 +26,6 @@ while w !=3:
                 count += 1
     elif x == 3:
             print("Saliendo del programa...") 
+            break
     else:
             print("opción incorrecta. Por favor ingresar un número de las opciones del menú.")
