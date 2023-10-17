@@ -11,11 +11,9 @@ def solicitar_info_linea(num_linea):
     empleados = []
     for i in range(20):  # Máximo de 20 empleados
         horas = int(input(f'Ingrese las horas trabajadas por el empleado {i+1} en la línea {num_linea}, o -1 si no hay más empleados: '))
-        horass=horas
         if horas == -1:
             break
         costo_hora = int(input(f'Ingrese el costo por hora del empleado {i+1} en la línea {num_linea}: '))
-
         print(f'horas trabajadas por el empleado {i+1}: '+str(horass))
         print(f'costo por hora del empleado {i+1}: '+str(costo_hora))
         empleados.append((horas, costo_hora))
