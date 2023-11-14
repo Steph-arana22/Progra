@@ -168,7 +168,6 @@ class Juego:
             coords = self.convertir_coordenadas(fila, columna)
             if coords is not None:
                 resultado = self.realizar_disparo(self.turno % 2 + 1, *coords)
-                print("\nTablero del Jugador 2 (Barcos ocultos):")
                 self.jugador2.mostrar_tablero_oculto(self.barcos2, self.disparos_realizados2)
                 print("\nDisparo realizado en", fila, columna)
                 print("\n-----------------\n")
